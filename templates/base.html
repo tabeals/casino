@@ -1,0 +1,20 @@
+    <!DOCTYPE html>
+    <html lang=en>
+    <head>
+        <title>{% block head_title %}CASINO{% endblock head_title %}</title>
+    </head>
+
+    <body>
+    <div class='container'>
+  <h1>MuyPicky.com</h1>
+    </div>
+{% include 'snippets/nav.html' %}
+  {% include 'snippets/css.html' %}
+  <div class="container">
+
+      {% block content %}
+      hello there!
+    {% endblock content %}
+  </div>
+    </body>
+    </html>

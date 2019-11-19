@@ -1,0 +1,38 @@
+#! ~/.virtualenvs/ecgps/bin/python
+#there are many function for sequences
+#these are some basic ones
+#i will ad more to this later
+#length of a list
+#
+>>> number=[8,1,4,17,28,165,7]
+>>> len(number)
+7
+#
+#maximum value and min value of a list
+#
+>>> max(number)
+165
+>>> min(number)
+1
+#
+#one of the ways list works is it will break apart a string into a list
+#
+name = 'roastbeef'
+>>> list(name)
+['r', 'o', 'a', 's', 't', 'b', 'e', 'e', 'f']
+#
+#we can also select items in a list by index and change them
+#
+>>> print(number)
+[8, 1, 4, 17, 28, 165, 7]
+>>> number[3] = -17
+>>> print(number)
+[8, 1, 4, -17, 28, 165, 7]
+#
+#deleting elements from the it wit del
+#
+>>> print(number)
+[8, 1, 4, -17, 28, 165, 7]
+>>> del number[3]
+>>> print(number)
+[8, 1, 4, 28, 165, 7]

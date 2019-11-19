@@ -1,8 +1,8 @@
 from django.conf.urls import url
-from . import views
+from resort.views import index
 
 
-urlpatterns = [
-    url(r'^$', views.index, name="index"),
+#urlpatterns = [
+  #  url(r'^$', index, name="index"),## this is the root of app
 
-]
+#]
