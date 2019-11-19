@@ -1,0 +1,11 @@
+version: '3'
+services:
+  casino:
+    build:
+      context: .
+    ports:
+      -'8000:8000'
+    volume:
+      -./casino:/casino
+    command: >
+      sh -c 'python manage.py runserver 0.0.0.0:80000'
